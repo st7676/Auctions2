@@ -1,0 +1,4 @@
+<div *ngFor="let a of auctions" (click)="select(a)" class="item">
+  <h3>{{ a.title }}</h3>
+  <p>Price: {{ a.currentPrice }}</p>
+</div>

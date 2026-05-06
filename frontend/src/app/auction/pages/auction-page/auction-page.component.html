@@ -1,0 +1,11 @@
+<div class="layout">
+
+  <app-auction-list
+    (selectAuction)="onSelect($event)">
+  </app-auction-list>
+
+  <app-auction-details
+    [auction]="selectedAuction">
+  </app-auction-details>
+
+</div>

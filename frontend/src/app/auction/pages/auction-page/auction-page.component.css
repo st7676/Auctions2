@@ -1,0 +1,15 @@
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+app-auction-list {
+  width: 35%;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+app-auction-details {
+  width: 65%;
+  padding: 20px;
+}

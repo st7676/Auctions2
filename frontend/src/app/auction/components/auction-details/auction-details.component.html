@@ -1,0 +1,16 @@
+<div *ngIf="auction">
+  <h2>{{ auction.title }}</h2>
+
+  <p>Current price: {{ auction.currentPrice }}</p>
+
+<p>Time left: {{ getRemainingTime() }}</p>
+  <p *ngIf="auction.isClosed">Auction closed</p>
+
+  <input
+    type="number"
+    [(ngModel)]="bidAmount"
+    placeholder="Your bid"
+  />
+
+  <button (click)="placeBid()">Place bid</button>
+</div>
